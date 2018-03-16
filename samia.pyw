@@ -19,8 +19,7 @@ class Channel:
         button = Button(root, width=15,height = 3, text = "CH " + str(self.number+1), command = self.startCounting).grid(row=self.number,column=0)
         minutes = str(datetime.timedelta(seconds=self.seconds))[2:]
         self.defineColor()
-        text = Label(root, width=20, height = 3,font=("TkDefaultFont", 12), text= minutes,justify = LEFT, anchor=W, bg=self.color, fg=fontColor).grid(row=self.number,column=1)
-        
+        text = Label(root, width=20, height = 3,font=("TkDefaultFont", 12), text= minutes,justify = LEFT, anchor=W, bg=self.color, fg=self.fontColor).grid(row=self.number,column=1)
     def startCounting(self):
         self.counting = True
         self.seconds = 1590
