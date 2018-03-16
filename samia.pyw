@@ -35,9 +35,15 @@ class Channel:
         elif self.seconds > 1590/2:
             self.color = "green"
             self.fontColor = "white"
-        elif self.seconds < 1590/2 and self.seconds > 240:
+        elif self.seconds < 1590/2 and self.seconds > 180:
             self.color = "yellow"
-            self.fontColor = "blackw"
+            self.fontColor = "black"
+        elif self.seconds == 180:
+            toaster.show_toast("Veryhtus CH" + str(self.number+1),
+                   "czas: " + str(datetime.timedelta(seconds=self.seconds))[2:],
+                   icon_path="custom.ico",
+                   duration=5,
+                   threaded=True)
         else:
             self.color = "red"
             self.fontColor = "white"
