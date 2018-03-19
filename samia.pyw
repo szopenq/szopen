@@ -32,7 +32,7 @@ class Channel:
         if self.seconds == 0:
             self.color = "blue"
             self.fontColor = "white"
-        elif self.seconds > 1590/2:
+        elif self.seconds >= 1590/2:
             self.color = "green"
             self.fontColor = "white"
         elif self.seconds < 1590/2 and self.seconds > 180:
