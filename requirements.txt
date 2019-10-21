@@ -11,7 +11,7 @@ configparser==3.5.0
 cryptography==1.9
 DateTime==4.2
 decorator==4.1.2
-ecdsa==0.13
+ecdsa==0.13.3
 esptool==2.3.dev0
 Flask==0.12.2
 ghost==0.6.1
