@@ -44,7 +44,7 @@ six==1.10.0
 splinter==0.7.6
 tinydb==3.3.1
 traitlets==4.3.2
-urllib3==1.21.1
+urllib3==1.26.5
 virtualenv==15.1.0
 Werkzeug==0.12.2
 win10toast==0.9
